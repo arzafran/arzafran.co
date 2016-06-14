@@ -1,4 +1,6 @@
+$color-bg        : #EAEAEA;
 $color-base      : #000;
+$color-articles  : #fff;
 $color-highlight : #FF0080;
 
 @font-face {
@@ -6,6 +8,14 @@ $color-highlight : #FF0080;
   font-style  : normal;
   font-weight : normal;
   src         : url('../fonts/AvenirLTStd-Book.woff') format('woff');
+}
+
+* {
+  font-family : 'Avenir-Book';
+}
+
+body {
+  background-color : $color-bg;
 }
 
 header {
@@ -17,16 +27,17 @@ header {
 
 section {
   article {
-    display         : flex;
-    margin          : 20px;
-    padding         : 100px;
-    overflow        : hidden;
-    border          : 1px solid $color-base;
-    border-radius   : 3px;
-    align-items     : center;
-    flex-direction  : column;
-    justify-content : center;
-    transition      : all 0.5s ease;
+    display          : flex;
+    margin           : 20px;
+    padding          : 100px;
+    overflow         : hidden;
+    border           : 1px solid $color-base;
+    border-radius    : 3px;
+    background-color : $color-articles;
+    align-items      : center;
+    flex-direction   : column;
+    justify-content  : center;
+    transition       : all 0.5s ease;
 
     .description {
       display         : flex;
@@ -80,10 +91,6 @@ nav ul {
   li {
     margin : 10px;
   }
-}
-
-* {
-  font-family : 'Avenir-Book';
 }
 
 a.link {
