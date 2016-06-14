@@ -1,0 +1,33 @@
+{
+  "name": "arzafran.co",
+  "version": "1.0.0",
+  "description": "Personal Website",
+  "main": "index.html",
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.13.0",
+    "cssnano": "^3.7.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-postcss": "^6.1.1",
+    "postcss-nested": "^1.0.0",
+    "postcss-simple-vars": "^2.0.0"
+  },
+  "scripts": {
+    "test": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arzafran/arzafran.github.io.git"
+  },
+  "keywords": [
+    "uidev",
+    "developer"
+  ],
+  "author": "Franco Arza",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arzafran/arzafran.github.io/issues"
+  },
+  "homepage": "https://arzafran.co"
+}

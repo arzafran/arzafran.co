@@ -1,0 +1,92 @@
+$color-base      : #000;
+$color-highlight : #FF0080;
+
+@font-face {
+  font-family : 'Avenir-Book';
+  font-style  : normal;
+  font-weight : normal;
+  src         : url('../fonts/AvenirLTStd-Book.woff') format('woff');
+}
+
+header {
+  display         : flex;
+  align-items     : center;
+  flex-direction  : column;
+  justify-content : center;
+}
+
+section {
+  article {
+    display         : flex;
+    margin          : 20px;
+    padding         : 100px;
+    overflow        : hidden;
+    border          : 1px solid $color-base;
+    border-radius   : 3px;
+    align-items     : center;
+    flex-direction  : column;
+    justify-content : center;
+    transition      : all 0.5s ease;
+
+    .description {
+      display         : flex;
+      align-items     : center;
+      flex-direction  : column;
+      justify-content : center;
+    }
+
+    ul {
+      padding         : 0;
+      list-style-type : circle;
+
+      li {
+        padding : 5px 0;
+
+        a:visited {
+          color : blue;
+        }
+      }
+    }
+
+    &:target {
+      box-shadow : 0 0 20px 0 $color-base;
+    }
+
+    .close a {
+      color           : $color-base;
+      text-decoration : none;
+      font-size       : 30px;
+    }
+
+    .back {
+      align-self : flex-start;
+
+      a {
+        color           : $color-base;
+        text-decoration : none;
+        font-size       : 30px;
+      }
+    }
+  }
+}
+
+nav ul {
+  display         : flex;
+  padding         : 0;
+  flex-wrap       : wrap;
+  justify-content : space-between;
+  list-style-type : none;
+
+  li {
+    margin : 10px;
+  }
+}
+
+* {
+  font-family : 'Avenir-Book';
+}
+
+a.link {
+  border-bottom   : 1px solid $color-highlight;
+  text-decoration : none;
+}
