@@ -1,0 +1,38 @@
+$c-button-padding: toem(8px) toem(10px) !default;
+$c-button-text-color: white !default;
+$c-button-background-color: black !default;
+$c-button-border-radius: toem(5px) !default;
+
+@mixin c-button() {
+  .button {
+    appearance: none;
+    display: inline-block;
+    padding: $c-button-padding;
+    font: $base-font;
+    line-height: 1; // Normalize height
+    color: $c-button-text-color;
+    text-align: center;
+    text-decoration: none;
+    background-color: $c-button-background-color;
+    border: none;
+    transition: all $base-transition-duration $base-transition-timing;
+
+    @if variable-exists(c-button-border-radius) and $c-button-border-radius != 0 {
+      border-radius: $c-button-border-radius;
+    }
+
+    &:hover {
+      background-color: complementary-color($c-button-background-color, 30%);
+    }
+
+    &.button--small {
+      font-size: 80%;
+    }
+
+    &.button--large {
+      font-size: 120%;
+    }
+  }
+}
+
+@include c-button();

@@ -1,0 +1,42 @@
+{
+  "name": "arzafran.co",
+  "version": "1.0.0",
+  "description": "just a personal website",
+  "homepage": "https://arzafran.co",
+  "license": "MIT",
+  "keywords": [
+    "ui",
+    "ui development"
+  ],
+  "author": "Franco Arza",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/arzafran/arzafran.github.io.git"
+  },
+  "devDependencies": {
+    "autoprefixer": "~6.7.2",
+    "browser-sync": "~2.18.6",
+    "css-mqpacker": "~5.0.1",
+    "gulp": "~3.9.1",
+    "gulp-bower": "0.0.13",
+    "gulp-clean-css": "~2.3.2",
+    "gulp-concat": "~2.6.1",
+    "gulp-css-globbing": "^0.1.9",
+    "gulp-imagemin": "~3.1.1",
+    "gulp-postcss": "~6.3.0",
+    "gulp-processhtml": "~1.1.0",
+    "gulp-sass": "~3.1.0",
+    "gulp-sourcemaps": "~2.4.0",
+    "gulp-uglify": "~2.0.1",
+    "node-sass": "~4.5.0",
+    "postcss-clean": "~1.0.2"
+  },
+  "main": "pdr",
+  "engines": {
+    "node": ">=7.4.0",
+    "npm": ">=3.10.9"
+  },
+  "scripts": {
+    "postinstall": "bower install"
+  }
+}

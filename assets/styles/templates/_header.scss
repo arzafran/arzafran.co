@@ -1,0 +1,19 @@
+.header {
+
+  &__banner {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+
+    &__image {
+    }
+
+    &__caption {
+      font-size: toem(35px);
+      position: absolute;
+      color: white;
+    }
+  }
+}
