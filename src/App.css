@@ -1,0 +1,35 @@
+.app {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 50%;
+  padding: 20px;
+  font-family: 'Slabo 27px', serif;
+  border-radius: 3px;
+  background-color: #FFF;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.back {
+  appearance: none;
+  background: none;
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  padding: 15px;
+  color: #153439;
+  border: 1px solid;
+  border-radius: 3px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.back:hover {
+  color: #FFF;
+  background-color: #153439;
+  border-color: #153439;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}

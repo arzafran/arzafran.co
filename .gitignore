@@ -1,20 +1,18 @@
-.settings
-.svn
-.project
-*.map
-*.scssc
-.node-version
-jeet/
-normalize/
-node_modules/
-bower_components/
+# See https://help.github.com/ignore-files/ for more about ignoring files.
 
-documentation/
-dev/
-dist/
-assets/js/vendor/
-assets/styles/libs/*
-!assets/styles/libs/iconfont/
-assets/styles/libs/iconfont/_icon-font.scss
-!assets/styles/libs/iconfont/gulp-icontemplate.css
-debug.log
+# dependencies
+/node_modules
+
+# testing
+/coverage
+
+# production
+/build
+
+# misc
+.DS_Store
+.env
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
