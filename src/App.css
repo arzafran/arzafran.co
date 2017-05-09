@@ -27,7 +27,8 @@
   transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 }
 
-.back:hover {
+.back:hover,
+.back:active {
   color: #FFF;
   background-color: #153439;
   border-color: #153439;
