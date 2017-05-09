@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  padding: 10px;
+  padding-bottom: 60px;
+  font-size: 18px;
+  background: no-repeat 
+    radial-gradient(
+      circle at bottom right,
+      #91C98C,
+      #153439
+    );
+  min-height: 100vh;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: 100%;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+ul li:last-child {
+  margin-bottom: 0;
+}
+
+.nav li a {
+  font-size: 32px;
+  color: #153439;
+}
+
+a {
+  text-decoration: none;
+}
